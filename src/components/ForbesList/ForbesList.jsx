@@ -20,11 +20,13 @@ export const ForbesList = ({forbes}) => {
 
   <LeaderBoardProfiles>
         {forbes.map(({
+          id,
           avatar,
           name,
           isIncrease,
           capital }) => (
           < ForbesListItem
+           key={id}
             avatar={avatar}
             name={name}
             isIncrease={isIncrease}
